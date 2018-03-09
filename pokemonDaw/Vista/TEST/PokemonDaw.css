@@ -1,0 +1,27 @@
+
+
+body{
+  background-color: black;
+  background-image: url(https://vignette.wikia.nocookie.net/es.pokemon/images/e/e4/Campo_de_batalla_DPPt_2.png/revision/latest?cb=20090424143324);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 750px;
+}
+.pokemon1{
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+}
+
+.pokemon2{
+  position: absolute;
+  left: 700px;
+  top: 100px;
+}
+
+.texto{
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+}
