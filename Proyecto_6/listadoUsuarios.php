@@ -15,6 +15,12 @@
       <br>
       <br>
       <br>
+      <h1>Insertar usuarios</h1>
+      <form action="insertarUsuario.php" method="post"><input type="submit" value="Insertar"></input></form>
+      <br>
+      <br>
+      <br>
+      <br>
   </head>
   <body>
     <?php

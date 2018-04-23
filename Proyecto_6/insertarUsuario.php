@@ -4,8 +4,9 @@
 		<title>Listado de usuarios</title>
 	</head>
 	<body>
+		<script type="text/javascript" src="comprobar.js"></script>
 		<!--Redireccionamos los datos a listadoUsuarios.php-->
-		<form action="listadoUsuarios.php">
+		<form action="listadoUsuarios.php" >
 			<h1>Formulario de registro de usuario</h1><div>
 			<b>Nombre: &nbsp</b> <input type="text" name="nombre" placeholder="nombre" ></input>
 			<br><br>
@@ -18,7 +19,7 @@
 			<b>Correo: &nbsp </b> <input type="text" name="correo" placeholder="curso" ></input>
 			<br><br>
 			</div>
-			<button><b>Registrar usuario</b></button>
+			<button onclick="comprobar()"><b>Registrar usuario</b></button>
 		</form>
 	</body>
 </html>

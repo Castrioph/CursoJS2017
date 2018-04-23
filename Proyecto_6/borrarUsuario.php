@@ -34,7 +34,7 @@
 					<br>
 					<br>
 					<br>
-          <input type="submit" value="Borrar"></input>
+          <input type="submit" value="Borrar" onclick="location.href='listadoUsuarios.php'"></input>
         </form>
       </fielset>
   </body>

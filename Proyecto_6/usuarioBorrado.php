@@ -12,6 +12,8 @@
 			$nombre=$_POST['nombre'];
       $busqueda="DELETE FROM usuarios WHERE nombre='$nombre' ";
       $conector->query($busqueda);
+			header("Location:listadoUsuarios.php");
+
       }
      ?>
    </body>

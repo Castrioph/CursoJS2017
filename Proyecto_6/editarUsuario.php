@@ -4,6 +4,7 @@
 		<title>Listado de usuarios</title>
 	</head>
 	<body>
+		<script type="text/javascript" src="comprobar.js"></script>
     <?php
     $conector=new mysqli("localhost","root","","juegos");
     if ($conector->connect_errno) {
@@ -24,7 +25,7 @@
      ?>
 
 		<!--Redireccionamos los datos a listadoUsuarios.php-->
-		<form action="usuarioActualizado.php" method="post">
+		<form action="usuarioActualizado.php" method="post" >
 			<h1>Formulario de registro de usuario</h1><div>
 			<b>Nombre:</b> <input type="text" name="nombre" placeholder="nombre" value="<?=$nombre ?>" > </input>
 			<br><br>
@@ -40,7 +41,7 @@
 			<br><br>
 			<b>Puntuación: &nbsp </b> <input type="text" name="puntuacion" placeholder="id" value="<?=$puntuacion ?>"></input>
 			</div>
-			<button><b>Registrar usuario</b></button>
+			<button onclick="comprobar()"><b>Registrar usuario</b></button>
 		</form>
 	</body>
 </html>
