@@ -12,6 +12,7 @@
     if($conector->connect_errno){
       echo "Ha ocurrido un error al conectar con la base de datos: ".$conector->connect_error;
     }
+
     //Creamos una tabla para mostrar los datos
     ?>
     <table border="1">
@@ -39,6 +40,7 @@
               <td>".$fila['correo']."</td>
             </tr>";
     }
+
     //En caso de que $_GET["nombre"] no esté vacío recogemos los datos para crear una inserción en la BBDD
     if(!empty($_GET["nombre"])) {
       $nombre=$_GET["nombre"];
@@ -60,6 +62,7 @@
       echo " Estos son los usuarios registrados";
     }
     ?>
-
+    <form action="actualizarUsuario.php"><input value="Actualizar"></input></form>
+    <form action="borrarUsuario.php"><input value="Borrar"></input></form>
   </body>
 </html>
